@@ -1,0 +1,9 @@
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    width: 70%;
+    margin: 120px auto;
+}

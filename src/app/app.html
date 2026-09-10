@@ -1,0 +1,22 @@
+
+<div class="grid-container">
+
+  <ejs-grid
+    [dataSource]="data"
+    [allowPaging]="true"
+    [pageSettings]="pageSettings"
+    [selectionSettings] = "selectionOptions"
+    [isRowSelectable] = "isRowSelectable"
+    [selectedRowIndex]="2">
+
+    <e-columns>
+      <e-column type = "checkbox" width="20"></e-column>
+      <e-column field='OrderID' headerText='Order ID' textAlign='right' width=90 isPrimaryKey ='true'></e-column>
+      <e-column field='CustomerID' headerText='Customer ID' width=70></e-column>
+      <e-column field='Freight' headerText='Freight' textAlign='right' format='C2' width=70></e-column>
+      <e-column field='OrderDate' headerText='Order Date' textAlign='right' format='yMd' width=120></e-column>
+      <e-column field='ShipCountry' headerText='Ship Country' width=120></e-column>
+    </e-columns>
+  </ejs-grid>
+
+</div>
